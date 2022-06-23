@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <com.myapp.dyu2.Mypreview
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:id="@+id/mypreview"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"/>
+
+    <com.myapp.dyu2.Myview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myview"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/relate"
+        android:visibility="gone"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/close"
+
+            android:id="@+id/image_btn"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spin"
+            android:layout_below="@+id/image_btn"
+            android:background="@mipmap/xia"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="15dp"
+            android:entries="@array/gpu_cpu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="识别阈值:"
+            android:background="@color/white"
+            android:id="@+id/txt1"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="4dp"
+            android:paddingBottom="3dp"
+            android:layout_below="@+id/spin"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spin2"
+            android:layout_toRightOf="@+id/txt1"
+            android:layout_below="@+id/spin"
+            android:layout_marginTop="15dp"
+            android:entries="@array/thred"
+            android:paddingRight="20dp"
+            android:background="@mipmap/xia2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:text="铃声阈值:"
+            android:background="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="4dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/txt2"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spin2"
+            android:layout_toRightOf="@+id/txt2"
+            android:background="@mipmap/xia2"
+            android:id="@+id/spin3"
+            android:paddingRight="20dp"
+            android:layout_marginTop="15dp"
+            android:entries="@array/thred2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt3"
+            android:text="更新时间:"
+            android:background="@color/white"
+            android:layout_below="@+id/txt2"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="3dp"
+            android:layout_marginLeft="4dp"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spin4"
+            android:layout_below="@+id/spin3"
+            android:background="@mipmap/xia2"
+            android:layout_toRightOf="@+id/txt3"
+            android:entries="@array/thred3"
+            android:layout_marginTop="15dp"
+            android:paddingRight="20dp"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txt3"
+            android:text="隐藏"
+            android:id="@+id/btn1"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</FrameLayout>
